@@ -24,7 +24,8 @@ Oh has been designed for gradual adoption from the start, and you can use as lit
 
 Oh can be configured to send its log events to any Observability ( or Logging! ) Platform Simply use one of the built in plugins, or create your own!
 
-```import {Oh} from 'oh-observability'
+```typescript
+import {Oh} from 'oh-observability'
 import {NewRelicDestination} from 'oh-observability/plugins'
 
 const newRelicDestination = new NewRelicDestination({
@@ -43,7 +44,7 @@ When registering events with the registry, Oh will automatically convert custom 
 
 ### Registering an Event with the Event Registry
 
-```
+```typescript
 import {Oh} from 'oh-observability'
 
 Oh.registerCustomEvent({
@@ -57,7 +58,7 @@ Oh.registerCustomEvent({
 
 ### With event registry
 
-```
+```typescript
 import {Oh} from 'oh-observability'
 
 async function calculateProductETADates(products: Product[]): ProductETA[] {
@@ -89,7 +90,7 @@ async function calculateProductETADates(products: Product[]): ProductETA[] {
 
 ### Without event registry setup
 
-```
+```typescript
 import {Oh} from 'oh-observability'
 
 async function calculateProductETADates(products: Product[]): ProductETA[] {

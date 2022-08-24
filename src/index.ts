@@ -8,7 +8,7 @@ function registerCustomEvent(){
     //
 }
 
-export {
+export const Oh = {
     recordEvent,
     registerCustomEvent
 }

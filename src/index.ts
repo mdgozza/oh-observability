@@ -1,3 +1,14 @@
-class Oh {
-    // ...
+
+
+function recordEvent(){
+    //
+}
+
+function registerCustomEvent(){
+    //
+}
+
+export {
+    recordEvent,
+    registerCustomEvent
 }
